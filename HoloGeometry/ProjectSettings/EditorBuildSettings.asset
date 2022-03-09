@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Learn geometrical shapes.unity
+    path: Assets/Scenes/1st game after selection Learn geometrical shapes.unity
     guid: 380539afad41ff240bf01aedb25afe66
   - enabled: 1
-    path: Assets/Scenes/Recognize geometrical shapes.unity
+    path: Assets/Scenes/delete.unity
     guid: 0cda49928209c274fbf56aa6e9df9b0e
   - enabled: 1
-    path: Assets/Scenes/Test your knowledge.unity
+    path: Assets/Scenes/3rd game countdown.unity
     guid: 027367ca098c6af49a8a8d8ea6189748
   m_configObjects: {}
