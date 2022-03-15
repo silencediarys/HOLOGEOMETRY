@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3519,6 +3519,7 @@ GameObject:
   - component: {fileID: 629634178}
   - component: {fileID: 629634177}
   - component: {fileID: 629634176}
+  - component: {fileID: 629634179}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -3589,7 +3590,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 629634177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 629634179}
+        m_TargetAssemblyTypeName: TestYourKnowledgeHandler, Assembly-CSharp
+        m_MethodName: OpenSecondScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &629634177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3628,6 +3641,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629634174}
   m_CullTransparentMesh: 1
+--- !u!114 &629634179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629634174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398cf2e6a70624eb09fa7d45b8d9cc96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SecondScreen: {fileID: 97959912}
 --- !u!1 &644027610
 GameObject:
   m_ObjectHideFlags: 0
