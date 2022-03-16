@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TYKSecondScreenHandler : MonoBehaviour
 {
 
-	float timeLeft = 5;
+  float timeLeft = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +23,9 @@ public class TYKSecondScreenHandler : MonoBehaviour
       if(timeLeft == 0)
       {
         print("Time's up!");
-        
+
 
       }
-      //print(timeLeft);
+      GameObject.Find("TimerButton").GetComponentInChildren<Text>().text = string.Format("Timer: {0}", timeLeft);
     }
 }
