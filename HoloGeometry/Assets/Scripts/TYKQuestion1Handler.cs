@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class TYKQuestion1Handler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+//public GameObject answer1;
+
+public void answer1Pressed()
+{
+	GameObject.Find("Answer 1").GetComponent<UnityEngine.UI.Image>().color = Color.green;
+}
+
+
+
 }

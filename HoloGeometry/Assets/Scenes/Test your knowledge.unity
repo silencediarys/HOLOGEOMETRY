@@ -1265,7 +1265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &248415574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3392,7 +3392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer 4
+  m_Text: 10
 --- !u!222 &599553581
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5323,7 +5323,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 75
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -5334,7 +5334,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Question 1
+  m_Text: How many edges does a square based equilateral pyramid have?
 --- !u!222 &897896164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5751,6 +5751,7 @@ GameObject:
   - component: {fileID: 918264280}
   - component: {fileID: 918264279}
   - component: {fileID: 918264278}
+  - component: {fileID: 918264281}
   m_Layer: 5
   m_Name: Answer 1
   m_TagString: Untagged
@@ -5821,7 +5822,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 918264279}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 918264281}
+        m_TargetAssemblyTypeName: TYKQuestion1Handler, Assembly-CSharp
+        m_MethodName: answer1Pressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &918264279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5860,6 +5873,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918264276}
   m_CullTransparentMesh: 1
+--- !u!114 &918264281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918264276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &920525585
 GameObject:
   m_ObjectHideFlags: 0
@@ -7401,7 +7426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer 3
+  m_Text: 8
 --- !u!222 &1310878784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7920,7 +7945,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer 2
+  m_Text: 6
 --- !u!222 &1366153549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10334,7 +10359,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Answer 1
+  m_Text: 4
 --- !u!222 &1978936576
 CanvasRenderer:
   m_ObjectHideFlags: 0
