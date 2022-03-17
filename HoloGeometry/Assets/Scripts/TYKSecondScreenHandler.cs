@@ -16,6 +16,7 @@ public class TYKSecondScreenHandler : MonoBehaviour
       if(Question1 != null)
       {
         Question1.SetActive(true);
+        print("SetActiveDone");
       }
     }
 
@@ -28,6 +29,7 @@ public class TYKSecondScreenHandler : MonoBehaviour
       if(timeLeft <= 0)
       {
           OpenQuestion1();
+          print("OQ1");
       }
       GameObject.Find("TimerButton").GetComponentInChildren<Text>().text = string.Format("Timer: {0}", timeLeft);
     }

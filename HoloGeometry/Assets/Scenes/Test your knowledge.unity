@@ -1259,6 +1259,7 @@ GameObject:
   - component: {fileID: 248415574}
   - component: {fileID: 248415576}
   - component: {fileID: 248415575}
+  - component: {fileID: 248415577}
   m_Layer: 5
   m_Name: Question 1
   m_TagString: Untagged
@@ -1325,6 +1326,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248415573}
   m_CullTransparentMesh: 1
+--- !u!114 &248415577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248415573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Question2: {fileID: 855242815}
 --- !u!1 &259578319
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,6 +4725,7 @@ GameObject:
   - component: {fileID: 851651686}
   - component: {fileID: 851651685}
   - component: {fileID: 851651684}
+  - component: {fileID: 851651687}
   m_Layer: 5
   m_Name: Answer 2
   m_TagString: Untagged
@@ -4781,7 +4796,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 851651685}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851651687}
+        m_TargetAssemblyTypeName: TYKQuestion1Handler, Assembly-CSharp
+        m_MethodName: answer2Pressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &851651685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4820,6 +4847,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851651682}
   m_CullTransparentMesh: 1
+--- !u!114 &851651687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851651682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Question2: {fileID: 855242815}
 --- !u!1 &853625747
 GameObject:
   m_ObjectHideFlags: 0
@@ -5885,6 +5925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Question2: {fileID: 855242815}
 --- !u!1 &920525585
 GameObject:
   m_ObjectHideFlags: 0
@@ -9586,6 +9627,7 @@ GameObject:
   - component: {fileID: 1863341294}
   - component: {fileID: 1863341293}
   - component: {fileID: 1863341292}
+  - component: {fileID: 1863341295}
   m_Layer: 5
   m_Name: Answer 4
   m_TagString: Untagged
@@ -9656,7 +9698,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1863341293}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1863341295}
+        m_TargetAssemblyTypeName: TYKQuestion1Handler, Assembly-CSharp
+        m_MethodName: answer4Pressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1863341293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9695,6 +9749,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863341290}
   m_CullTransparentMesh: 1
+--- !u!114 &1863341295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863341290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Question2: {fileID: 855242815}
 --- !u!1 &1872736250
 GameObject:
   m_ObjectHideFlags: 0
@@ -10027,6 +10094,7 @@ GameObject:
   - component: {fileID: 1916295111}
   - component: {fileID: 1916295110}
   - component: {fileID: 1916295109}
+  - component: {fileID: 1916295112}
   m_Layer: 5
   m_Name: Answer 3
   m_TagString: Untagged
@@ -10097,7 +10165,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1916295110}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1916295112}
+        m_TargetAssemblyTypeName: TYKQuestion1Handler, Assembly-CSharp
+        m_MethodName: answer3Pressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1916295110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10136,6 +10216,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916295107}
   m_CullTransparentMesh: 1
+--- !u!114 &1916295112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916295107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Question2: {fileID: 855242815}
 --- !u!1 &1946463828
 GameObject:
   m_ObjectHideFlags: 0
