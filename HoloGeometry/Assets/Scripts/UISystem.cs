@@ -22,13 +22,15 @@ namespace UI
 
         private Component[] screens = new Component[0];
 
-        private static UIScreen previousScreen;
-        public static UIScreen PreviousScreen { get { return previousScreen; } }
+        private static int index = 0;
+        private static bool backButtonPressed = false;
+
+        private static UIScreen[] previousScreen = new UIScreen[1000]; // !!!
+        public static UIScreen[] PreviousScreen { get { return previousScreen; } }
 
         private static UIScreen currentScreen;
         public static UIScreen CurrentScreen { get { return currentScreen; } }
         #endregion
-
 
         #region Main Methods
         // Start is called before the first frame update
@@ -50,8 +52,6 @@ namespace UI
         }
         #endregion
 
-
-
         #region Helper Methods
         public static void SwitchScreens(UIScreen aScreen)
         {
@@ -60,7 +60,16 @@ namespace UI
                 if (currentScreen)
                 {
                     currentScreen.CloseScreen();
-                    previousScreen = currentScreen;
+                    if (backButtonPressed)
+                    {
+                        previousScreen[index] = null;
+                        index -= 1;
+                    } else
+                    {
+                        previousScreen[index] = currentScreen;
+                        index += 1;
+                    }
+                    backButtonPressed = false;
                 }
 
                 currentScreen = aScreen;
@@ -92,10 +101,8 @@ namespace UI
 
         public void GoToPreviousScreen()
         {
-            if (previousScreen)
-            {
-                SwitchScreens(previousScreen);
-            }
+            backButtonPressed = true;
+            SwitchScreens(previousScreen[index - 1]);
         }
 
         public void LoadScene(int sceneIndex)
