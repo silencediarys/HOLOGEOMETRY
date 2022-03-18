@@ -13,7 +13,7 @@ namespace UI
         public UIScreen mStartScreen;
 
         [Header("System Events")]
-        public UnityEvent onSwitchedScreen = new UnityEvent();
+        public static UnityEvent onSwitchedScreen = new UnityEvent();
 
         [Header("Fader Properties")]
         public Image mFader;
@@ -22,11 +22,11 @@ namespace UI
 
         private Component[] screens = new Component[0];
 
-        private UIScreen previousScreen;
-        public UIScreen PreviousScreen { get { return previousScreen; } }
+        private static UIScreen previousScreen;
+        public static UIScreen PreviousScreen { get { return previousScreen; } }
 
-        private UIScreen currentScreen;
-        public UIScreen CurrentScreen { get { return currentScreen; } }
+        private static UIScreen currentScreen;
+        public static UIScreen CurrentScreen { get { return currentScreen; } }
         #endregion
 
 
@@ -53,7 +53,7 @@ namespace UI
 
 
         #region Helper Methods
-        public void SwitchScreens(UIScreen aScreen)
+        public static void SwitchScreens(UIScreen aScreen)
         {
             if(aScreen)
             {
