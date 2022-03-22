@@ -13,7 +13,7 @@ namespace UI
     {
         #region Variables
         [Header("Main Properties")]
-        public Selectable mStartSelectable;
+        public Selectable m_StartSelectable;
 
         [Header("Screen Events")]
         public UnityEvent onScreenStart = new UnityEvent();
@@ -29,9 +29,9 @@ namespace UI
         {
             animator = GetComponent<Animator>();
 
-            if (mStartSelectable)
+            if (m_StartSelectable)
             {
-                EventSystem.current.SetSelectedGameObject(mStartSelectable.gameObject);
+                EventSystem.current.SetSelectedGameObject(m_StartSelectable.gameObject);
             }
         }
         #endregion

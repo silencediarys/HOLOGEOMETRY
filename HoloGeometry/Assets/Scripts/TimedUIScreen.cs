@@ -9,7 +9,7 @@ namespace UI
     {
         #region Variables
         [Header("Timed Screen Properties")]
-        public float mScreenTime = 4f;
+        public float m_ScreenTime = 4f;
         public UnityEvent onTimeCompleted = new UnityEvent();
 
         public float startTime;
@@ -26,7 +26,7 @@ namespace UI
 
         IEnumerator WaitForTime()
         {
-            yield return new WaitForSeconds(mScreenTime);
+            yield return new WaitForSeconds(m_ScreenTime);
 
             if(onTimeCompleted != null)
             {

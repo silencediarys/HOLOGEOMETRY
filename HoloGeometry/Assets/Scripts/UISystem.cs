@@ -10,15 +10,15 @@ namespace UI
     {
         #region Variables
         [Header("Main Properties")]
-        public UIScreen mStartScreen;
+        public UIScreen m_StartScreen;
 
         [Header("System Events")]
         public static UnityEvent onSwitchedScreen = new UnityEvent();
 
         [Header("Fader Properties")]
-        public Image mFader;
-        public float mFadeInDuration = 1f;
-        public float mFadeOutDuration = 1f;
+        public Image m_Fader;
+        public float m_FadeInDuration = 1f;
+        public float m_FadeOutDuration = 1f;
 
         private Component[] screens = new Component[0];
 
@@ -39,14 +39,14 @@ namespace UI
             screens = GetComponentsInChildren<UIScreen>(true);
             InitializeScreens();
 
-            if (mStartScreen)
+            if (m_StartScreen)
             {
-                SwitchScreens(mStartScreen);
+                SwitchScreens(m_StartScreen);
             }
 
-            if (mFader)
+            if (m_Fader)
             {
-                mFader.gameObject.SetActive(true);
+                m_Fader.gameObject.SetActive(true);
             }
             FadeIn();
         }
@@ -85,17 +85,17 @@ namespace UI
 
         public void FadeIn()
         {
-            if(mFader)
+            if(m_Fader)
             {
-                mFader.CrossFadeAlpha(0f, mFadeInDuration, false);
+                m_Fader.CrossFadeAlpha(0f, m_FadeInDuration, false);
             }
         }
 
         public void FadeOut()
         {
-            if (mFader)
+            if (m_Fader)
             {
-                mFader.CrossFadeAlpha(1f, mFadeOutDuration, false);
+                m_Fader.CrossFadeAlpha(1f, m_FadeOutDuration, false);
             }
         }
 
