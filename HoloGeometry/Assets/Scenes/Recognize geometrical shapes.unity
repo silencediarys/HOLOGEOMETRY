@@ -4163,6 +4163,7 @@ GameObject:
   - component: {fileID: 3632536596437202586}
   - component: {fileID: 3632536596437202584}
   - component: {fileID: 3632536596437202587}
+  - component: {fileID: 3632536596437202582}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -4170,6 +4171,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3632536596437202582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632536596437202581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9266233a4e6a74ea04bdb64d7f99dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fontSizeD: 75
+  _fontSizeR: 75
+  _regular: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  _dyslexic: {fileID: 12800000, guid: 3fda832c5036837438b4e0ea36a439bd, type: 3}
+  f: 0
 --- !u!222 &3632536596437202584
 CanvasRenderer:
   m_ObjectHideFlags: 0
