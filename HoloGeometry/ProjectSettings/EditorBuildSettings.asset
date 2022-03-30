@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test your knowledge.unity
     guid: 027367ca098c6af49a8a8d8ea6189748
+  - enabled: 1
+    path: Assets/Hologram Pyramid/Scene/Demo.unity
+    guid: 1380173de96034859a9db2023bbea5fe
   m_configObjects: {}

@@ -25,7 +25,7 @@ namespace UI
         private static int index = 0;
         private static bool backButtonPressed = false;
 
-        private static UIScreen[] previousScreen = new UIScreen[1000]; // !!!
+        private static UIScreen[] previousScreen = new UIScreen[10000]; // !!!
         public static UIScreen[] PreviousScreen { get { return previousScreen; } }
 
         private static UIScreen currentScreen;

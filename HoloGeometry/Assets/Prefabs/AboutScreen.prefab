@@ -507,7 +507,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Team: \nAinoa Gin\xE9s Herrera - Universitat Politecnica de Valencia (Spain)\nBal\xE1zs
+  m_Text: "Team: \nAinoa Gin\xE9s Herrera - Universidad Politecnica de Valencia (Spain)\nBal\xE1zs
     Pint\xE9r - University of Debrecen (Hungary)\nBernard Ba\u010Dani - University
     of Zagreb (Croatia)\nDulcelina Gon\xE7alves - Instituto Politecnico de Santarem
     (Portugal)\nMartin Kuzman - University of Dubrovnik (Croatia)\n\nSupervisor:
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9266233a4e6a74ea04bdb64d7f99dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fontSizeD: 35
+  _fontSizeD: 30
   _fontSizeR: 35
   _regular: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   _dyslexic: {fileID: 12800000, guid: 3fda832c5036837438b4e0ea36a439bd, type: 3}
@@ -624,7 +624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8632539692731970104
 RectTransform:
   m_ObjectHideFlags: 0
