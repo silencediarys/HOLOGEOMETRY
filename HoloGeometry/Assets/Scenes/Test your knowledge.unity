@@ -751,6 +751,7 @@ GameObject:
   - component: {fileID: 248415580}
   - component: {fileID: 248415579}
   - component: {fileID: 248415578}
+  - component: {fileID: 248415577}
   m_Layer: 5
   m_Name: ThirdScreen
   m_TagString: Untagged
@@ -817,6 +818,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248415573}
   m_CullTransparentMesh: 1
+--- !u!114 &248415577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248415573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question: {fileID: 0}
+  answer1: {fileID: 0}
+  answer2: {fileID: 0}
+  answer3: {fileID: 0}
+  answer4: {fileID: 0}
 --- !u!114 &248415578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,7 +1984,6 @@ GameObject:
   - component: {fileID: 851651686}
   - component: {fileID: 851651685}
   - component: {fileID: 851651684}
-  - component: {fileID: 851651687}
   m_Layer: 5
   m_Name: Answer 2
   m_TagString: Untagged
@@ -2038,13 +2055,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 851651687}
+      - m_Target: {fileID: 248415577}
         m_TargetAssemblyTypeName: UI.TYKQuestion1Handler, Assembly-CSharp
         m_MethodName: answer2Pressed
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UI.UIScreen, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2088,20 +2105,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851651682}
   m_CullTransparentMesh: 1
---- !u!114 &851651687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851651682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  texts: []
-  question: {fileID: 0}
 --- !u!1 &867431127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,7 +2501,6 @@ GameObject:
   - component: {fileID: 918264280}
   - component: {fileID: 918264279}
   - component: {fileID: 918264278}
-  - component: {fileID: 918264281}
   m_Layer: 5
   m_Name: Answer 1
   m_TagString: Untagged
@@ -2570,7 +2572,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 918264281}
+      - m_Target: {fileID: 248415577}
         m_TargetAssemblyTypeName: UI.TYKQuestion1Handler, Assembly-CSharp
         m_MethodName: answer1Pressed
         m_Mode: 1
@@ -2620,20 +2622,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918264276}
   m_CullTransparentMesh: 1
---- !u!114 &918264281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918264276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  texts: []
-  question: {fileID: 0}
 --- !u!1001 &1220673872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3475,7 +3463,6 @@ GameObject:
   - component: {fileID: 1863341294}
   - component: {fileID: 1863341293}
   - component: {fileID: 1863341292}
-  - component: {fileID: 1863341295}
   m_Layer: 5
   m_Name: Answer 4
   m_TagString: Untagged
@@ -3547,13 +3534,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1863341295}
+      - m_Target: {fileID: 248415577}
         m_TargetAssemblyTypeName: UI.TYKQuestion1Handler, Assembly-CSharp
         m_MethodName: answer4Pressed
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UI.UIScreen, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3597,20 +3584,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863341290}
   m_CullTransparentMesh: 1
---- !u!114 &1863341295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863341290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  texts: []
-  question: {fileID: 0}
 --- !u!1 &1916295107
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,7 +3596,6 @@ GameObject:
   - component: {fileID: 1916295111}
   - component: {fileID: 1916295110}
   - component: {fileID: 1916295109}
-  - component: {fileID: 1916295112}
   m_Layer: 5
   m_Name: Answer 3
   m_TagString: Untagged
@@ -3695,13 +3667,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1916295112}
+      - m_Target: {fileID: 248415577}
         m_TargetAssemblyTypeName: UI.TYKQuestion1Handler, Assembly-CSharp
         m_MethodName: answer3Pressed
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UI.UIScreen, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3745,20 +3717,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916295107}
   m_CullTransparentMesh: 1
---- !u!114 &1916295112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916295107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464438edb30114434998ed9396065793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  texts: []
-  question: {fileID: 0}
 --- !u!1 &1953707730
 GameObject:
   m_ObjectHideFlags: 0
