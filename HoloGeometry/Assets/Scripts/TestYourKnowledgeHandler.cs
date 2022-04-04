@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class TestYourKnowledgeHandler : MonoBehaviour
 {
-  //[SerializeField] private string scene;
 
   public GameObject SecondScreen;
   public GameObject AccessibilityScreen;
-
 
   public void OpenSecondScreen()
   {

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI{
+namespace UI 
+{
     public class TestYourKnowledge : MonoBehaviour
     {
 
@@ -23,6 +24,9 @@ namespace UI{
 
         public void timer(UIScreen screen)
         {
+            Quiz.questionId = 0;
+            Quiz.correct_count = 0;
+            Quiz.wrong_count = 0;
             StartCoroutine(wait(screen));
         }
 
