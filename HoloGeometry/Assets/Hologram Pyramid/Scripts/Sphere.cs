@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class Earth : MonoBehaviour {
+public class Sphere : MonoBehaviour {
     [Header("Settings")]
 
     private float sliderRotPos, lastRotPos = 0, sliderSizePos, lastSizePos = 0;
