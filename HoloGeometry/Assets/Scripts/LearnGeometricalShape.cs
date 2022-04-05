@@ -13,7 +13,7 @@ namespace UI{
         // Start is called before the first frame update
         void Start()
         {
-
+            hideShapes();
         }
 
         // Update is called once per frame
@@ -99,15 +99,40 @@ namespace UI{
             if(choosenShape.name == "LeftButton")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Pyramid";
+
+                hideShapes();
+                GameObject.Find("Pyramid").GetComponent<Renderer>().enabled = true;
+
+                PlayerPrefs.SetString("shape", "Pyramid");
+                PlayerPrefs.Save();
             }
             else if(choosenShape.name == "MiddleButton")
             {
-                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Square";
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cube";
+                
+                hideShapes();
+                GameObject.Find("Cube").GetComponent<Renderer>().enabled = true;
+
+                PlayerPrefs.SetString("shape", "Cube");
+                PlayerPrefs.Save();
             }
             else if(choosenShape.name == "RightButton")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cylinder";
+
+                hideShapes();
+                GameObject.Find("Cylinder").GetComponent<Renderer>().enabled = true;
+
+                PlayerPrefs.SetString("shape", "Cylinder");
+                PlayerPrefs.Save();
             }
+        }
+        
+        public void hideShapes(){
+            GameObject.Find("Cylinder").GetComponent<Renderer>().enabled = false;
+            GameObject.Find("Earth").GetComponent<Renderer>().enabled = false;
+            GameObject.Find("Cube").GetComponent<Renderer>().enabled = false;
+            GameObject.Find("Pyramid").GetComponent<Renderer>().enabled = false;
         }
     }
 

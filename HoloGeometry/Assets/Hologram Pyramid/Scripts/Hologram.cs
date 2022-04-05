@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Hologram : MonoBehaviour {
     [Header("Settings")]
 
-    private float sliderRotPos, lastRotPos = 0, sliderSizePos, lastSizePos = 0;
+    private float sliderRotPos, lastRotPos = 0, sliderSizePos, lastSizePos = 0, baseScale;
     private Slider rotation, size;
     
     void Start()
@@ -15,6 +15,7 @@ public class Hologram : MonoBehaviour {
 
         sliderRotPos = rotation.value;
         sliderSizePos = size.value;
+        baseScale = this.transform.localScale.x;
     }
 
 	public void rotate()
@@ -35,7 +36,7 @@ public class Hologram : MonoBehaviour {
 
     public void scale()
     {   
-        this.transform.localScale = new Vector3(size.value + (float)0.5, size.value + (float)0.5, size.value + (float)0.5);
+        this.transform.localScale = new Vector3(size.value + baseScale, size.value + baseScale, size.value + baseScale);
 
         sliderSizePos = size.value;
 
@@ -55,6 +56,6 @@ public class Hologram : MonoBehaviour {
 
     public void changeColor(Button btn)
     {
-        GameObject.Find("Cube").GetComponent<Renderer>().material.SetColor("_Color", btn.GetComponentInChildren<Image>().color);
+        GameObject.Find(PlayerPrefs.GetString("shape")).GetComponent<Renderer>().material.SetColor("_Color", btn.GetComponentInChildren<Image>().color);
     }
 }
