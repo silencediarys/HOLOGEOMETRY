@@ -100,7 +100,10 @@ namespace UI{
             // But I wasn't sure how we are going to do hologram stuff
             if(choosenShape.name == "btnPyramid")
             {
-                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Pyramid";
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Pyramid:\nA pyramid is a polyhedron with a polygon base " +
+                    "and an apex with straight edges and flat faces. Based on their apex alignment with the center of the base, " +
+                    "they can be classified into regular and oblique pyramids. The pyramid you see on your screen right now " +
+                    "has a quadrilateral base is called a square pyramid.";
 
                 hideShapes();
                 GameObject.Find("Pyramid").GetComponent<Renderer>().enabled = true;
