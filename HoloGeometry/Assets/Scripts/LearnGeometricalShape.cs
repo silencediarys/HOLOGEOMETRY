@@ -111,7 +111,7 @@ namespace UI{
                 PlayerPrefs.SetString("shape", "Pyramid");
                 PlayerPrefs.Save();
             }
-            else if(choosenShape.name == "btnSquare")
+            else if(choosenShape.name == "btnCube")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cube";
                 
