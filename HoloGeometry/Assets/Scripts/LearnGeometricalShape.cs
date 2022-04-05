@@ -26,15 +26,17 @@ namespace UI{
         {
             // All button objects are saved in variables
             Button selectShapeButton =  GameObject.Find("SelectShapeButton").GetComponent<Button>();
-            Button leftButton =  GameObject.Find("LeftButton").GetComponent<Button>();
-            Button middleButton =  GameObject.Find("MiddleButton").GetComponent<Button>();
-            Button rightButton =  GameObject.Find("RightButton").GetComponent<Button>();
+            Button btnPyramid =  GameObject.Find("btnPyramid").GetComponent<Button>();
+            Button btnCube =  GameObject.Find("btnCube").GetComponent<Button>();
+            Button btnCylinder =  GameObject.Find("btnCylinder").GetComponent<Button>();
+            Button btnSphere =  GameObject.Find("btnSphere").GetComponent<Button>();
 
             // Color of all buttons is reseted
             Color colors = new Color32(71, 65, 131, 255);
-            leftButton.GetComponentInChildren<Image>().color = colors;
-            middleButton.GetComponentInChildren<Image>().color = colors;
-            rightButton.GetComponentInChildren<Image>().color = colors;
+            btnPyramid.GetComponentInChildren<Image>().color = colors;
+            btnCube.GetComponentInChildren<Image>().color = colors;
+            btnCylinder.GetComponentInChildren<Image>().color = colors;
+            btnSphere.GetComponentInChildren<Image>().color = colors;
             
             // Button when pressed changes color to blue ( could be changed to any color in fututre )
             button.GetComponentInChildren<Image>().color = new Color32(0, 0, 255, 255);;
@@ -96,7 +98,7 @@ namespace UI{
             // Right now I have just changed text of description to tell which shape has been selected.
             // We also need better description, audio description, change color functionality and we need to be able to rotate and zoom hologram
             // But I wasn't sure how we are going to do hologram stuff
-            if(choosenShape.name == "LeftButton")
+            if(choosenShape.name == "btnPyramid")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Pyramid";
 
@@ -106,7 +108,7 @@ namespace UI{
                 PlayerPrefs.SetString("shape", "Pyramid");
                 PlayerPrefs.Save();
             }
-            else if(choosenShape.name == "MiddleButton")
+            else if(choosenShape.name == "btnSquare")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cube";
                 
@@ -116,7 +118,7 @@ namespace UI{
                 PlayerPrefs.SetString("shape", "Cube");
                 PlayerPrefs.Save();
             }
-            else if(choosenShape.name == "RightButton")
+            else if(choosenShape.name == "btnCylinder")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cylinder";
 
@@ -126,11 +128,21 @@ namespace UI{
                 PlayerPrefs.SetString("shape", "Cylinder");
                 PlayerPrefs.Save();
             }
+            else if(choosenShape.name == "btnSphere")
+            {
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Sphere";
+
+                hideShapes();
+                GameObject.Find("Sphere").GetComponent<Renderer>().enabled = true;
+
+                PlayerPrefs.SetString("shape", "Sphere");
+                PlayerPrefs.Save();
+            }
         }
         
         public void hideShapes(){
             GameObject.Find("Cylinder").GetComponent<Renderer>().enabled = false;
-            GameObject.Find("Earth").GetComponent<Renderer>().enabled = false;
+            GameObject.Find("Sphere").GetComponent<Renderer>().enabled = false;
             GameObject.Find("Cube").GetComponent<Renderer>().enabled = false;
             GameObject.Find("Pyramid").GetComponent<Renderer>().enabled = false;
         }
