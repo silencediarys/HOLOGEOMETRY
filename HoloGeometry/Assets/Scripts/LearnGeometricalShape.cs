@@ -113,7 +113,8 @@ namespace UI{
             }
             else if(choosenShape.name == "btnCube")
             {
-                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cube";
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cube:\nA cube is a 3D object that has six faces in the shape of a square. " + 
+                    "Its sides are equal in length and the surrounding squares have an equal surface area.";
                 
                 hideShapes();
                 GameObject.Find("Cube").GetComponent<Renderer>().enabled = true;
@@ -123,7 +124,9 @@ namespace UI{
             }
             else if(choosenShape.name == "btnCylinder")
             {
-                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cylinder";
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cylinder:\nA cylinder is a 3D shape that has two circular faces, " +
+                    "one at the top and one at the bottom, and one curved surface. A cylinder has a height and a radius. The height of a cylinder is the " + 
+                    "perpendicular distance between the top and bottom faces.";
 
                 hideShapes();
                 GameObject.Find("Cylinder").GetComponent<Renderer>().enabled = true;
@@ -133,7 +136,8 @@ namespace UI{
             }
             else if(choosenShape.name == "btnSphere")
             {
-                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Sphere";
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Sphere:\nA sphere is a 3D geometrical object that is round in shape " +
+                    "that has all the points on its surface that are equidistant from its center.";
 
                 hideShapes();
                 GameObject.Find("Sphere").GetComponent<Renderer>().enabled = true;
