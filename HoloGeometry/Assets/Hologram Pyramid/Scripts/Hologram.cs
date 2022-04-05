@@ -41,13 +41,20 @@ public class Hologram : MonoBehaviour {
 
         if(sliderSizePos > lastSizePos)
         {
-            this.transform.position += transform.up * (size.value * (float)0.008);
+            
+            this.transform.position += transform.up * (size.value * (float)0.08);
         }
         else
         {
-            this.transform.position += transform.up * -(size.value * (float)0.008);
+            this.transform.position += transform.up * -(size.value * (float)0.08);
         }
 
+        
         lastSizePos = size.value;
+    }
+
+    public void changeColor(Button btn)
+    {
+        GameObject.Find("Cube").GetComponent<Renderer>().material.SetColor("_Color", btn.GetComponentInChildren<Image>().color);
     }
 }
