@@ -100,10 +100,9 @@ namespace UI{
             // But I wasn't sure how we are going to do hologram stuff
             if(choosenShape.name == "btnPyramid")
             {
-                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Pyramid:\nA pyramid is a polyhedron with a polygon base " +
-                    "and an apex with straight edges and flat faces. Based on their apex alignment with the center of the base, " +
-                    "they can be classified into regular and oblique pyramids. The pyramid you see on your screen right now " +
-                    "has a quadrilateral base is called a square pyramid.";
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Pyramid:\nA pyramid is a polyhedron with a polygon base and an apex " +
+                    "with straight edges and flat faces. Based on their apex alignment with the center of the base, they can be classified into regular and " +
+                    "oblique pyramids. The pyramid you see on your screen right now has a quadrilateral base so it is called a square pyramid.";
 
                 hideShapes();
                 GameObject.Find("Pyramid").GetComponent<Renderer>().enabled = true;
@@ -113,7 +112,7 @@ namespace UI{
             }
             else if(choosenShape.name == "btnCube")
             {
-                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cube:\nA cube is a 3D object that has six faces in the shape of a square. " + 
+                GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cube:\nA cube is a 3D shape that has six faces in the shape of a square. " +
                     "Its sides are equal in length and the surrounding squares have an equal surface area.";
                 
                 hideShapes();
@@ -125,7 +124,7 @@ namespace UI{
             else if(choosenShape.name == "btnCylinder")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Cylinder:\nA cylinder is a 3D shape that has two circular faces, " +
-                    "one at the top and one at the bottom, and one curved surface. A cylinder has a height and a radius. The height of a cylinder is the " + 
+                    "one at the top, one at the bottom, and one curved surface. A cylinder has a height and a radius. The height of a cylinder is the " +
                     "perpendicular distance between the top and bottom faces.";
 
                 hideShapes();
@@ -137,7 +136,7 @@ namespace UI{
             else if(choosenShape.name == "btnSphere")
             {
                 GameObject.Find("Description").GetComponentInChildren<Text>().text = "Sphere:\nA sphere is a 3D geometrical object that is round in shape " +
-                    "that has all the points on its surface that are equidistant from its center.";
+                    "and has all of its points on its surface equidistant from its center.";
 
                 hideShapes();
                 GameObject.Find("Sphere").GetComponent<Renderer>().enabled = true;
