@@ -179,8 +179,11 @@ namespace UI{
 
         public void stopAudio()
         {
-            audioSource.Stop();
-            isPlaying = false;
+            if(isPlaying)
+            {
+                audioSource.Stop();
+                isPlaying = false;
+            }
         }
     }
 }
