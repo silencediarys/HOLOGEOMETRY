@@ -6,9 +6,10 @@ using UnityEngine.UI;
 namespace UI{
     public class LearnGeometricalShape : MonoBehaviour
     {
-
+        public AudioClip[] audioClips;
         private Button choosenShape;
-        private bool click = false;
+        private bool click = false, isPlaying = false;
+        private AudioSource audioSource;
         
         // Start is called before the first frame update
         void Start()
@@ -146,12 +147,40 @@ namespace UI{
             }
         }
         
-        public void hideShapes(){
+        public void hideShapes()
+        {
             GameObject.Find("Cylinder").GetComponent<Renderer>().enabled = false;
             GameObject.Find("Sphere").GetComponent<Renderer>().enabled = false;
             GameObject.Find("Cube").GetComponent<Renderer>().enabled = false;
             GameObject.Find("Pyramid").GetComponent<Renderer>().enabled = false;
         }
-    }
 
+        public void playAudio()
+        {   
+            audioSource = gameObject.GetComponent<AudioSource>();
+
+            foreach(AudioClip audioClip in audioClips)
+            {
+                if(audioClip.name == PlayerPrefs.GetString("shape"))
+                {
+                    audioSource.clip = audioClip;
+                }
+            }
+            if(isPlaying)
+            {
+                stopAudio();
+            }
+            else
+            {
+                audioSource.Play();
+                isPlaying = true;
+            }
+        }
+
+        public void stopAudio()
+        {
+            audioSource.Stop();
+            isPlaying = false;
+        }
+    }
 }
