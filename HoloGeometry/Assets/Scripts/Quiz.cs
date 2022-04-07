@@ -126,7 +126,7 @@ namespace UI
 			GameObject.Find("Answer 3").GetComponent<Button>().interactable = false;
 			GameObject.Find("Answer 4").GetComponent<Button>().interactable = false;
 
-			await Task.Delay(1000);
+			await Task.Delay(3000);
 
 			GameObject.Find("Answer 1").GetComponent<Button>().interactable = true;
 			GameObject.Find("Answer 2").GetComponent<Button>().interactable = true;
